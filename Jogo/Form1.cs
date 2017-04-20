@@ -35,7 +35,26 @@ namespace Jogo
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Carro monza = new Carro();
+            monza.modelo = "monza";
+            monza.marca = "chevrolet";
+            monza.cor = "preto";
+            monza.motorizacao = "2.0";
+            monza.ano_fabricacao = 1990;
+            monza.velocidade_maxima = 200;
+            monza.quantidade_marchas = 5;
 
+            Carro uno = new Carro();
+            uno.modelo = "uno";
+            uno.marca = "fiat";
+            uno.cor = "vermelho";
+            uno.motorizacao = "1.0";
+            uno.ano_fabricacao = 1995;
+            uno.velocidade_maxima = 160;
+            uno.quantidade_marchas = 5;
+
+            MessageBox.Show(monza.modelo + " " + monza.marca);
+            MessageBox.Show(uno.modelo + " " + uno.marca);
         }
     }
 }
