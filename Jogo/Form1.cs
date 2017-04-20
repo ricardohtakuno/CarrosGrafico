@@ -16,5 +16,26 @@ namespace Jogo
         {
             InitializeComponent();
         }
+        class Carro
+        {
+            public string modelo;
+            public string marca;
+            public string cor;
+            public string motorizacao;
+            public int ano_fabricacao;
+            public int velocidade_maxima;
+            public int quantidade_marchas;
+
+            public void acelerar() { }
+            public void virar() { }
+            public void buzinar() { }
+            public void trocar_marcha() { }
+            public void acender_farois() { }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
