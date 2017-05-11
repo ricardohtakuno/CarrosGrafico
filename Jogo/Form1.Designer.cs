@@ -38,13 +38,13 @@
             this.btnUno = new System.Windows.Forms.Button();
             this.btnMonza = new System.Windows.Forms.Button();
             this.picCarro = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnBuzinar = new System.Windows.Forms.Button();
+            this.btnFarois = new System.Windows.Forms.Button();
+            this.btnAcelerar = new System.Windows.Forms.Button();
+            this.btnAumentarMarcha = new System.Windows.Forms.Button();
+            this.btnDiminuirMarcha = new System.Windows.Forms.Button();
+            this.btnVirar = new System.Windows.Forms.Button();
+            this.lblMarchaAtual = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picCarro)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,81 +140,87 @@
             this.picCarro.TabIndex = 9;
             this.picCarro.TabStop = false;
             // 
-            // button1
+            // btnBuzinar
             // 
-            this.button1.Location = new System.Drawing.Point(42, 296);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Buzinar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBuzinar.Location = new System.Drawing.Point(42, 296);
+            this.btnBuzinar.Name = "btnBuzinar";
+            this.btnBuzinar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuzinar.TabIndex = 10;
+            this.btnBuzinar.Text = "Buzinar";
+            this.btnBuzinar.UseVisualStyleBackColor = true;
+            this.btnBuzinar.Click += new System.EventHandler(this.btnBuzinar_Click);
             // 
-            // button2
+            // btnFarois
             // 
-            this.button2.Location = new System.Drawing.Point(143, 296);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Farois";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnFarois.Location = new System.Drawing.Point(143, 296);
+            this.btnFarois.Name = "btnFarois";
+            this.btnFarois.Size = new System.Drawing.Size(75, 23);
+            this.btnFarois.TabIndex = 11;
+            this.btnFarois.Text = "Farois";
+            this.btnFarois.UseVisualStyleBackColor = true;
+            this.btnFarois.Click += new System.EventHandler(this.btnFarois_Click);
             // 
-            // button3
+            // btnAcelerar
             // 
-            this.button3.Location = new System.Drawing.Point(243, 296);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 12;
-            this.button3.Text = "Acelerar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnAcelerar.Location = new System.Drawing.Point(243, 296);
+            this.btnAcelerar.Name = "btnAcelerar";
+            this.btnAcelerar.Size = new System.Drawing.Size(75, 23);
+            this.btnAcelerar.TabIndex = 12;
+            this.btnAcelerar.Text = "Acelerar";
+            this.btnAcelerar.UseVisualStyleBackColor = true;
+            this.btnAcelerar.Click += new System.EventHandler(this.btnAcelerar_Click);
             // 
-            // button4
+            // btnAumentarMarcha
             // 
-            this.button4.Location = new System.Drawing.Point(348, 296);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(35, 23);
-            this.button4.TabIndex = 13;
-            this.button4.Text = "+";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnAumentarMarcha.Location = new System.Drawing.Point(348, 296);
+            this.btnAumentarMarcha.Name = "btnAumentarMarcha";
+            this.btnAumentarMarcha.Size = new System.Drawing.Size(35, 23);
+            this.btnAumentarMarcha.TabIndex = 13;
+            this.btnAumentarMarcha.Text = "+";
+            this.btnAumentarMarcha.UseVisualStyleBackColor = true;
+            this.btnAumentarMarcha.Click += new System.EventHandler(this.btnAumentarMarcha_Click);
             // 
-            // button5
+            // btnDiminuirMarcha
             // 
-            this.button5.Location = new System.Drawing.Point(348, 326);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(35, 23);
-            this.button5.TabIndex = 14;
-            this.button5.Text = "-";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnDiminuirMarcha.Location = new System.Drawing.Point(348, 326);
+            this.btnDiminuirMarcha.Name = "btnDiminuirMarcha";
+            this.btnDiminuirMarcha.Size = new System.Drawing.Size(35, 23);
+            this.btnDiminuirMarcha.TabIndex = 14;
+            this.btnDiminuirMarcha.Text = "-";
+            this.btnDiminuirMarcha.UseVisualStyleBackColor = true;
+            this.btnDiminuirMarcha.Click += new System.EventHandler(this.btnDiminuirMarcha_Click);
             // 
-            // button6
+            // btnVirar
             // 
-            this.button6.Location = new System.Drawing.Point(411, 296);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 15;
-            this.button6.Text = "Virar";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnVirar.Location = new System.Drawing.Point(411, 296);
+            this.btnVirar.Name = "btnVirar";
+            this.btnVirar.Size = new System.Drawing.Size(75, 23);
+            this.btnVirar.TabIndex = 15;
+            this.btnVirar.Text = "Virar";
+            this.btnVirar.UseVisualStyleBackColor = true;
+            this.btnVirar.Click += new System.EventHandler(this.btnVirar_Click);
             // 
-            // label1
+            // lblMarchaAtual
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(345, 359);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(48, 13);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Marchas";
+            this.lblMarchaAtual.AutoSize = true;
+            this.lblMarchaAtual.Location = new System.Drawing.Point(345, 359);
+            this.lblMarchaAtual.Name = "lblMarchaAtual";
+            this.lblMarchaAtual.Size = new System.Drawing.Size(48, 13);
+            this.lblMarchaAtual.TabIndex = 16;
+            this.lblMarchaAtual.Text = "Marchas";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 381);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lblMarchaAtual);
+            this.Controls.Add(this.btnVirar);
+            this.Controls.Add(this.btnDiminuirMarcha);
+            this.Controls.Add(this.btnAumentarMarcha);
+            this.Controls.Add(this.btnAcelerar);
+            this.Controls.Add(this.btnFarois);
+            this.Controls.Add(this.btnBuzinar);
             this.Controls.Add(this.picCarro);
             this.Controls.Add(this.btnMonza);
             this.Controls.Add(this.btnUno);
@@ -246,13 +252,13 @@
         private System.Windows.Forms.Button btnUno;
         private System.Windows.Forms.Button btnMonza;
         private System.Windows.Forms.PictureBox picCarro;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnBuzinar;
+        private System.Windows.Forms.Button btnFarois;
+        private System.Windows.Forms.Button btnAcelerar;
+        private System.Windows.Forms.Button btnAumentarMarcha;
+        private System.Windows.Forms.Button btnDiminuirMarcha;
+        private System.Windows.Forms.Button btnVirar;
+        private System.Windows.Forms.Label lblMarchaAtual;
     }
 }
 

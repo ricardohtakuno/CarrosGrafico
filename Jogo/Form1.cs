@@ -73,5 +73,35 @@ namespace Jogo
 
             MeuCarro.ExibirFoto(picCarro);
         }
+
+        private void btnBuzinar_Click(object sender, EventArgs e)
+        {
+            MeuCarro.Buzinar();
+        }
+
+        private void btnFarois_Click(object sender, EventArgs e)
+        {
+            MeuCarro.AcenderFarois(picCarro);
+        }
+
+        private void btnAcelerar_Click(object sender, EventArgs e)
+        {
+            MeuCarro.Acelerar(picCarro);
+        }
+
+        private void btnVirar_Click(object sender, EventArgs e)
+        {
+            MeuCarro.Virar(picCarro);
+        }
+
+        private void btnAumentarMarcha_Click(object sender, EventArgs e)
+        {
+            lblMarchaAtual.Text = MeuCarro.TrocarMarcha("+").ToString();
+        }
+
+        private void btnDiminuirMarcha_Click(object sender, EventArgs e)
+        {
+            lblMarchaAtual.Text = MeuCarro.TrocarMarcha("-").ToString();
+        }
     }
 }
